@@ -7,7 +7,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import butterknife.ButterKnife
 import kotlinx.android.synthetic.main.activity_main.*
-import xiniunet.com.kaixueprractice.practice01.Practice01Activity
+import xiniunet.com.kaixueprractice.practice02.Practice02Activity
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,10 +20,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun toPage(){
-        val context:Context = this;
+        val context:Context = this
         bt_sample01.setOnClickListener(object :View.OnClickListener {
             override fun onClick(p0: View?) {
-                startActivity(Intent(context,Practice01Activity::class.java))
+                startActivity(Intent(context, Practice02Activity::class.java))
             }
 
         })
